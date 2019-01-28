@@ -1,0 +1,48 @@
+[EL Config]: metadata: 2019-01-28 13:05:06.252--ServerSession(726181440)--Thread(Thread[main,5,main])--The access type for the persistent class [class Event] is set to [FIELD].
+[EL Config]: metadata: 2019-01-28 13:05:06.267--ServerSession(726181440)--Thread(Thread[main,5,main])--The access type for the persistent class [class EventPK] is set to [FIELD].
+[EL Config]: metadata: 2019-01-28 13:05:06.272--ServerSession(726181440)--Thread(Thread[main,5,main])--The access type for the persistent class [class OgmListEvent] is set to [FIELD].
+[EL Config]: metadata: 2019-01-28 13:05:06.281--ServerSession(726181440)--Thread(Thread[main,5,main])--The column name for element [body] is being defaulted to: BODY.
+[EL Config]: metadata: 2019-01-28 13:05:06.283--ServerSession(726181440)--Thread(Thread[main,5,main])--The column name for element [title] is being defaulted to: TITLE.
+[EL Config]: metadata: 2019-01-28 13:05:06.283--ServerSession(726181440)--Thread(Thread[main,5,main])--The column name for element [type] is being defaulted to: TYPE.
+[EL Config]: metadata: 2019-01-28 13:05:06.283--ServerSession(726181440)--Thread(Thread[main,5,main])--The alias name for the entity class [class OgmListEvent] is being defaulted to: OgmListEvent.
+[EL Config]: metadata: 2019-01-28 13:05:06.283--ServerSession(726181440)--Thread(Thread[main,5,main])--The table name for entity [class OgmListEvent] is being defaulted to: OGMLISTEVENT.
+[EL Config]: metadata: 2019-01-28 13:05:06.287--ServerSession(726181440)--Thread(Thread[main,5,main])--The column name for element [body] is being defaulted to: BODY.
+[EL Config]: metadata: 2019-01-28 13:05:06.287--ServerSession(726181440)--Thread(Thread[main,5,main])--The column name for element [title] is being defaulted to: TITLE.
+[EL Config]: metadata: 2019-01-28 13:05:06.287--ServerSession(726181440)--Thread(Thread[main,5,main])--The column name for element [type] is being defaulted to: TYPE.
+[EL Info]: 2019-01-28 13:05:08.093--ServerSession(726181440)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
+[EL Fine]: connection: 2019-01-28 13:05:08.296--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.MySQLPlatform
+[EL Config]: connection: 2019-01-28 13:05:08.304--ServerSession(726181440)--Connection(2062667890)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>MySQLPlatform
+	user name=> "root"
+	datasource URL=> "jdbc:mysql://localhost:3306/hibernate-timing"
+))
+[EL Config]: connection: 2019-01-28 13:05:08.309--ServerSession(726181440)--Connection(1313359405)--Thread(Thread[main,5,main])--Connected: jdbc:mysql://localhost:3306/hibernate-timing
+	User: root@localhost
+	Database: MySQL  Version: 5.7.25-0ubuntu0.18.04.2
+	Driver: MySQL Connector Java  Version: mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )
+[EL Info]: connection: 2019-01-28 13:05:08.338--ServerSession(726181440)--Thread(Thread[main,5,main])--file:/home/aantonio/workspace/hibernate-timing/target/classes/_mysqlPU login successful
+[EL Fine]: sql: 2019-01-28 13:05:08.348--ServerSession(726181440)--Connection(1313359405)--Thread(Thread[main,5,main])--DROP TABLE OGMLISTEVENT
+[EL Fine]: sql: 2019-01-28 13:05:08.379--ServerSession(726181440)--Connection(1313359405)--Thread(Thread[main,5,main])--DELETE FROM actkeygen WHERE name = event
+[EL Fine]: sql: 2019-01-28 13:05:08.397--ServerSession(726181440)--Connection(1313359405)--Thread(Thread[main,5,main])--CREATE TABLE OGMLISTEVENT (BODY LONGTEXT, TITLE VARCHAR(255), TYPE VARCHAR(255), user_id INTEGER, activity_id BIGINT NOT NULL, id BIGINT NOT NULL, PRIMARY KEY (activity_id, id))
+[EL Fine]: sql: 2019-01-28 13:05:08.433--ServerSession(726181440)--Connection(1313359405)--Thread(Thread[main,5,main])--SELECT * FROM actkeygen WHERE name = event
+[EL Fine]: sql: 2019-01-28 13:05:08.435--ServerSession(726181440)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO actkeygen(name, value) values (event, 0)
+[EL Fine]: sql: 2019-01-28 13:05:08.65--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@1b0e031b, title, null, 0, 1, 178072973286945751]
+[EL Fine]: sql: 2019-01-28 13:05:09.232--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@55317c63, title, null, 0, 1, 153390850711876907]
+[EL Fine]: sql: 2019-01-28 13:05:10.085--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@5b1cedfd, title, null, 0, 1, -6792696815109135345]
+[EL Fine]: sql: 2019-01-28 13:05:11.314--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@1bad5ab3, title, null, 0, 1, 3823656972464056190]
+[EL Fine]: sql: 2019-01-28 13:05:12.817--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@5d9ccad2, title, null, 0, 1, 7532045670635515494]
+[EL Fine]: sql: 2019-01-28 13:05:14.626--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@2f9b33f1, title, null, 0, 1, 6155245603796024502]
+[EL Fine]: sql: 2019-01-28 13:05:16.786--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@33a1bff8, title, null, 0, 1, 6189207098881242157]
+[EL Fine]: sql: 2019-01-28 13:05:19.284--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@3741c7de, title, null, 0, 1, -2076128852688039176]
+[EL Fine]: sql: 2019-01-28 13:05:22.126--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@5a5b0e14, title, null, 0, 1, 229448597717910883]
+[EL Fine]: sql: 2019-01-28 13:05:25.352--ClientSession(2074865054)--Connection(1313359405)--Thread(Thread[main,5,main])--INSERT INTO OGMLISTEVENT (BODY, TITLE, TYPE, user_id, activity_id, id) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [OgmListEventBody@7bf974a1, title, null, 0, 1, 1496022908758465831]
